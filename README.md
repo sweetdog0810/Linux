@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PetLink L00：Linux命令行桌宠
 
 这是PetLink Linux学习链的第一个版本。它不连接STM32，目标是先建立Linux应用开发的基本工程能力。
@@ -42,3 +43,6 @@ cat reports/system_report.txt
 - `docs/L00_learning_guide.md`
 - `docs/book_mapping.md`
 - `docs/checklist.md`
+=======
+# Linux
+>>>>>>> 3d4e3635491655c63e642a52ce36cabe352af7b5
