@@ -57,13 +57,13 @@ Command parse_command(const std::string& input)
     if (name == "face") {
         std::string mode;
         if (!(stream >> mode)) {
-            return {CommandType::Invalid, {}, 0, "face 后面需要 normal/happy/angry/sleep"};
+            return {CommandType::Invalid, {}, 0, "face 后面需要 normal/happy/angry/sleep/sad"};
         }
         if (has_extra_token(stream)) {
             return {CommandType::Invalid, {}, 0, "face 命令参数过多"};
         }
         mode = to_lower(mode);
-        if (mode != "normal" && mode != "happy" && mode != "angry" && mode != "sleep") {
+        if (mode != "normal" && mode != "happy" && mode != "angry" && mode != "sleep"&& mode != "sad") {
             return {CommandType::Invalid, {}, 0, "不支持的表情：" + mode};
         }
         return {CommandType::SetFace, mode};

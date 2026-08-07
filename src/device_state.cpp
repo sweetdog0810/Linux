@@ -9,6 +9,7 @@ std::string face_mode_to_string(FaceMode mode)
     case FaceMode::Happy: return "HAPPY";
     case FaceMode::Angry: return "ANGRY";
     case FaceMode::Sleep: return "SLEEP";
+    case FaceMode::Sad  : return "SAD"  ;
     }
     return "UNKNOWN";
 }
@@ -21,6 +22,7 @@ bool apply_command(DeviceState& state, const Command& command, std::string& resu
         else if (command.text_value == "happy") state.face = FaceMode::Happy;
         else if (command.text_value == "angry") state.face = FaceMode::Angry;
         else if (command.text_value == "sleep") state.face = FaceMode::Sleep;
+        else if (command.text_value == "sad")   state.face = FaceMode::Sad;
         else {
             result = "内部错误：无效表情";
             return false;

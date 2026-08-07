@@ -18,6 +18,7 @@ void print_help()
         << "  face happy           设置开心表情\n"
         << "  face angry           设置生气表情\n"
         << "  face sleep           设置睡眠表情\n"
+        << "  face sad             设置悲伤表情\n"
         << "  servo <0-180>        设置模拟舵机角度\n"
         << "  light <0-4095>       设置模拟光照值\n"
         << "  sysinfo              读取 Linux 系统信息\n"

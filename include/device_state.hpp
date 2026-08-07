@@ -8,7 +8,8 @@ enum class FaceMode {
     Normal,
     Happy,
     Angry,
-    Sleep
+    Sleep,
+    Sad
 };
 
 struct DeviceState {
