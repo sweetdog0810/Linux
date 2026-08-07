@@ -1,0 +1,5 @@
+build/
+logs/*.log
+reports/*.txt
+.vscode/ipch/
+*.o

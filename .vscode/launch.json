@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "L00: GDB 调试",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/petlink_l00",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "preLaunchTask": "L00: 编译"
+        }
+    ]
+}
