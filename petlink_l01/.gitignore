@@ -1,0 +1,8 @@
+build/
+logs/*.log
+reports/*.txt
+
+*.o
+*.log
+__pycache__/
+*.pyc
